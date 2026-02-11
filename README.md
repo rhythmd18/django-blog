@@ -1,8 +1,13 @@
-# Django Blog
+<h1 align="center">django Blog</h1>
 
-A minimal, distraction-free blogging platform built with Django. Features a clean, accessible UI with dark/light mode support and a responsive design.
+<p align="center">
+  A minimal, distraction-free blogging platform built with Django.<br>
+  Features a clean, accessible UI with dark/light mode support and a responsive design.
+</p>
 
-![Project Preview](static/images/preview.png)
+<div align="center">
+  <img src="static/images/preview.png" alt="Project Preview">
+</div>
 
 ## Features
 
