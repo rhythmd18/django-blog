@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <p class="hero-badge">Built with Django</p>
+    <h1 class="hero-title">A place for your<br><span>thoughts</span>.</h1>
+    <p class="hero-subtitle">A minimal, distraction-free blogging platform.<br>Write, share, and connect.</p>
+    <div class="hero-actions">
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_list' %}" class="btn-primary">View Posts</a>
+            <a href="{% url 'post_new' %}" class="btn-outline">Write Something</a>
+        {% else %}
+            <a href="{% url 'signup' %}" class="btn-primary">Get Started</a>
+            <a href="{% url 'post_list' %}" class="btn-outline">Browse Posts</a>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
