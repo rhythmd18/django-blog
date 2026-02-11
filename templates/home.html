@@ -4,8 +4,12 @@
     {% for post in post_list %}
         <div class="post-entry">
             <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
-            <p>Author: {{ post.author }}</p>
-            <p>{{ post.body }}</p>
+            <p class="post-meta">by {{ post.author }}</p>
+            <p class="post-body">{{ post.body }}</p>
+        </div>
+    {% empty %}
+        <div class="empty-state">
+            <p>No posts yet. Be the first to write one!</p>
         </div>
     {% endfor %}
 {% endblock %}
