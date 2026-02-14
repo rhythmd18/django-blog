@@ -30,7 +30,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rhythmd18/django-blog.git
    cd blog
    ```
 
